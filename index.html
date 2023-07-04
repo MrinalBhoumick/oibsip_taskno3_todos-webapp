@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Todo App</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>To-Do App</title>
+  <style>
+    .completed {
+      text-decoration: line-through;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Todo App</h1>
+  <h1>To-Do App</h1>
+  
+  <h2>Add Task</h2>
+  <input type="text" id="taskInput">
+  <button onclick="addTask()">Add</button>
 
-  <div id="todo-container">
-    <input type="text" id="todo-input" placeholder="Enter a new task">
-    <button id="add-button">Add</button>
-    <ul id="todo-list"></ul>
-  </div>
+  <h2>Pending Tasks</h2>
+  <ul id="pendingList"></ul>
 
-  <script src="main.js"></script>
+  <h2>Completed Tasks</h2>
+  <ul id="completedList"></ul>
+
+  <script src="app.js"></script>
 </body>
 </html>
